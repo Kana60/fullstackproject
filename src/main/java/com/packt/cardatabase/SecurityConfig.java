@@ -58,7 +58,8 @@ public class SecurityConfig {
         CorsConfiguration config = new CorsConfiguration();
         
         // Порт 5173 (React)
-        config.setAllowedOrigins(Arrays.asList("*"));
+
+        config.setAllowedOrigins(Arrays.asList("http://localhost:5173", "https://stellar-zuccutto-26784a.netlify.app"));
         config.setAllowedMethods(Arrays.asList("*"));
         config.setAllowedHeaders(Arrays.asList("*"));
         config.setAllowCredentials(false);
